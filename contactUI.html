@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="developer/devIcon.ico">
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="developer/css/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="multi-button">
+        <a href="developerCard.html"><button class="back">
+                <i class="fas fa-backspace"></i>
+                <div class="animate-normal ">Back</div>
+            </button></a>
+        <a href="index.html"><button>
+                <i class="fas fa-home"></i>
+                <div class="animate-normal ">Home</div>
+            </button></a>
+        <a href="https://paypal.me/Daniel0401?locale.x=en_GB"><button class="donate">
+                <i class="fab fa-paypal"></i>
+                <div class="animate-normal ">Donate</div>
+            </button></a>
+    </div>
+    <div class="wrapper">
+        <div class="image-wrapper">
+            <img src="images/thumbnail_dan.jpg" alt="Daniel Lee" />
+            <h1 class="name">Daniel Lee</h1>
+            <p class="description">Web Developer | Designer</p>
+
+            <ul class="social-media">
+                <a class="btn twitter" href="https://twitter.com/Daniel_lee_9" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn instagram" href="https://www.instagram.com/daniel_lee98/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn snapchat" href="https://www.snapchat.com/add/daniel_lee9" target="_blank"><i
+                        class="fab fa-snapchat-ghost"></i></a>
+            </ul>
+            <a href="mailto:daniel_lee9@live.co.uk?subject=Enquiry" target="_blank" class="email"><i
+                    class="fas fa-envelope"></i>Email</a>
+            &nbsp;
+            <a href="javascript:void(0)" class="skillsBtn">Skills</a>
+        </div>
+    </div>
+    <div class="skills">
+		<h6>Current Skills</h6>
+		<ul>
+			<li>UI / UX</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>C#</li>
+		</ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.skillsBtn').click(function(){
+          $('.skillsBtn').toggleClass('active')
+          $('.skills').toggleClass('active')
+          $('.wrapper').toggleClass('active')
+        })
+      })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charSet="utf-8" class="next-head" />
+   <meta charset="UTF-8" class="next-head" />
+   <title class="next-head">Changelog</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" class="next-head" />
+   <link rel="icon" href="changelog.ico" class="next-head" />
+   <meta property="og:url" content="" class="next-head" />
+   <meta property="og:image" content="" class="next-head" />
+   <meta property="og:image:width" content="1200" class="next-head" />
+   <meta property="og:image:height" content="630" class="next-head" />
+   <link rel="stylesheet" type="text/css" href="changelog/css/style.css" class="next-head" />
+   <link rel="stylesheet" type="text/css" href="changelog/css/fa-regular.min.css" class="next-head" />
+   <link rel="stylesheet" type="text/css" href="changelog/css/fa-solid.min.css" class="next-head" />
+   <link rel="stylesheet" type="text/css" href="changelog/css/fontawesome.min.css" class="next-head" />
+   <link rel="stylesheet" type="text/css" href="changelog/css/index.css">
+   <style>
+      a,
+      .tint,
+      .table-btn:after {
+         color:
+      }
+
+      .active {
+         color: ;
+         border-bottom: 2px solid;
+      }
+   </style>
+   <script src="changelog/js/index.js"></script>
+   <meta name="theme-color" content="">
+   <script>compatible("9.0", "Unknown", "iOS 9.0 to Unknown"); externalize()</script>
+   <style id="__jsx-1456027835">
+      /* iOS prefers-color-scheme  */
+      :root {
+         color-scheme: light dark;
+         --color-primary-bg: hsl(0, 0%, 96%);
+      }
+
+      @media (prefers-color-scheme: dark) {
+         :root {
+            --color-primary-bg: hsl(0, 3%, 7%);
+         }
+      }
+      /* Customize website's scrollbar like Mac OS
+      Not supports in Firefox and IE */
+
+      body::-webkit-scrollbar {
+         background-color: hsl(0, 0%, 96%);
+         background-color: var(--color-primary-bg);
+         width:16px
+      }
+
+      body::-webkit-scrollbar-track {
+         background-color: hsl(0, 0%, 96%);
+         background-color: var(--color-primary-bg);
+      }
+
+      body::-webkit-scrollbar-thumb {
+         background-color:#babac0;
+         border-radius:16px;
+         border:4px solid hsl(0, 0%, 96%);
+         border:4px solid var(--color-primary-bg);
+      }
+
+      body::-webkit-scrollbar-button {display:none}
+
+      body {
+         -webkit-text-size-adjust: none;
+         -webkit-touch-callout: none;
+         -webkit-user-select: text;
+         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+         margin: 9px auto;
+         width: 100vw;
+         max-width: 414px !important;
+         background-color: hsl(0, 0%, 96%);
+         background-color: var(--color-primary-bg);
+         min-font-size: 13px;
+         text-align: center;
+         font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+         font-weight: 500;
+         font-size: 15px;
+      }
+
+      .package-screenshots {
+         text-align: center;
+         height: 100%;
+         margin-left: -3%;
+         margin-right: -3%;
+      }
+
+      .screenshot {
+         text-align: center;
+         display: inline-block;
+         margin: auto;
+         width: 100% !important;
+         height: auto !important;
+      }
+
+      .screenshotContainer {
+         width: 44%;
+         display: inline-block;
+         text-align: center;
+         margin: 3%;
+      }
+
+      .screenshot-viewer {
+         overflow: -moz-scrollbars-none;
+         overflow: scroll;
+         overflow-x: auto;
+         overflow-y: hidden;
+         -webkit-overflow-scrolling: touch;
+         overflow-scrolling: touch;
+         width: auto;
+         min-width: 100%;
+         white-space: nowrap;
+         margin-left: -6px;
+         margin-right: -6px;
+         padding-left: 6px;
+         padding-right: 6px;
+         list-style: none;
+         margin-top: 15px;
+         -ms-overflow-style: none;
+      }
+
+      .screenshot-viewer::-webkit-scrollbar {
+         display: none;
+      }
+
+      .changes-more {
+         margin-right: -20px;
+         margin-left: -20px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: center;
+         padding-top: 15px;
+         padding-bottom: 12px;
+         width: 100%;
+         display: block;
+         margin-top: 0px;
+         margin-bottom: -12px;
+         text-decoration: none !important;
+         -webkit-background-clip: text;
+         margin-top: 0px;
+      }
+
+      .changes-more label {
+         font-size: 16px;
+         font-weight: 700;
+         line-height: 0;
+         text-decoration: none !important;
+         color: #484848;
+         -webkit-letter-spacing: 0.5px;
+         -moz-letter-spacing: 0.5px;
+         -ms-letter-spacing: 0.5px;
+         letter-spacing: 0.5px;
+         -webkit-background-clip: text;
+         background: linear-gradient(90deg, #202124, #282C2F);
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+      }
+
+      .fading-sep {
+         margin-top: 10px;
+         height: 1px;
+         background: linear-gradient(90deg, #fff, #dddddd, #fff);
+      }
+
+      .hidden {
+         display: none;
+      }
+
+      .sf-text {
+         font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      }
+
+      .green-gradient {
+         background: linear-gradient(90deg, #202124, #282C2F) !important;
+      }
+
+      .restrict-detail>span {
+         display: block;
+         padding-bottom: 7px;
+      }
+
+      .restrict-detail>span:last-child {
+         padding-bottom: 0px;
+      }
+   </style>
+</head>
+
+<body>
+   <div>
+      <div id="__next">
+         <div data-reactroot="">
+            <div class="jsx-1456027835">
+               <div class="jsx-1456027835">
+                  <div class="jsx-1456027835 contents-container">
+
+
+                     </panel-body>
+                     </panel>
+                     <ul class="breadcrumb">
+                        <li><a href="index.html">Homepage</a></li>
+                     </ul>
+                     <panel class="jsx-1456027835 modern">
+                        <panel-header className="jsx-1456027835">
+                           <label class="jsx-1456027835 changelog-title">Version History</label>
+                        </panel-header>
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 8.5</code>
+                                    <br>
+                                    <ul>
+                                       <li>Bug Fixes</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.3.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>iOS 13 Light / Dark mode now works on the changelog</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.2.4</code>
+                                 <br>
+                                 <ul>
+                                    <li>Fixed Light / Dark mode in setting not displaying on the Firefox browser</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.2.3</code>
+                                 <br>
+                                 <ul>
+                                    <li>Added iOS 13 dark mode compatiblity via colour preference</li>
+                                    <li>Light / Dark mode in settings will only display on browsers / devices 
+                                       that don't have a theme selection</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.2</code>
+                                 <br>
+                                 <ul>
+                                    <li>Added Changelog to the settings dropdown</li>
+                                    <li>Changed the 'Read More/Less' style on Developer & Tester page</li>
+                                    <li>Few minor changes</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.1.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>Removed the settings dropdown for IE (Internet Explorer) and replaced with 'Email' icon only</li>
+                                    <li>Better support for old browsers such as IE (Internet Explorer)</li>
+                                    <li>Added 'Go To:' in the settings dropdown</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>Added a settings dropdown which contains the 'Email' and 'Dark Mode' icons</li>
+                                    <li>Text now displays along side the 'Email' and 'Dark Mode' icons</li>
+                                    <li>Correct some minor spelling mistakes across the website</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8.0.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>Replaced 'Changelog' text with 'Version History'</li>
+                                    <li>Decreased 'Version' font size on devices</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 8</code>
+                                 <br>
+                                 <ul>
+                                    <li>Darkened scrollbar when 'dark mode' is active</li>
+                                    <li>Fixed issue with buttons expanding then shrinking to normal size</li>
+                                    <li>Changed icon layout on menu (Device Only)</li>
+                                    <li>Removed 'Email' from footer as moved to Developer contact page</li>
+                                    <li>Changed 'User Tester' text to 'Tester'</li>
+                                    <li>Better support for smaller devices such as the iPhone SE</li>
+                                    <li>Removed the dark mode icon on IE (Internet Explorer) due to it not being supported</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                  </panel-body>
+               </panel>
+               <panel class="jsx-1456027835 modern">
+                  </panel-header>
+                  <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                     <table cols="2" border="0" class="jsx-1456027835 information">
+                        <tbody class="jsx-1456027835">
+                           <tr class="jsx-3269109252">
+                              <code>Version 7.3.3</code>
+                              <br>
+                              <ul>
+                                 <li>Changed dark/light mode icon</li>
+                                 <li>Other small changes</li>
+                                 <li>User Interface Improvements</li>
+                              </ul>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.3.2</code>
+                                 <br>
+                                 <ul>
+                                    <li>Small changes & bug fixes</li>
+                                    <li>Better IE (Internet Explorer) & Mac OS support</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+                        
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.3.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>New profile image for Developer page & contact card</li>
+                                    <li>Changed background gradient on contact card</li>
+                                    <li>Skills toggle now blends in with contact card</li>
+                                    <li>Changed scrollbar to look like Mac OS (Desktop Only)</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.3</code>
+                                 <br>
+                                 <ul>
+                                    <li>Removed the 'Get in Touch' via social media accounts on the Developer page</li>
+                                    <li>Contact Card now displays on desktop browsers</li>
+                                    <li>Fixed issue with new dropdown menu not closing on second click</li>
+                                    <li>Changed dropdown text to say 'Less' when open</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.2.3</code>
+                                 <br>
+                                 <ul>
+                                    <li>Redesigned the Contact Card UI</li>
+                                    <li>Fixed issues with developer page</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.2.2</code>
+                                 <br>
+                                 <ul>
+                                    <li>Added 'Get in Touch' via social media accounts on the Developer page (Desktop Only)</li>
+                                    <li>Added Contact Card (Mobile Only)</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.2.1</code>
+                                 <br>
+                                 <ul>
+                                    <li>Fixed the 'Version' number in changelog not displaying the correct style on devices</li>
+                                    <li>Changed the dropdown menu</li>
+                                    <li>Added a scrollbar for laptop & desktop users</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.2</code>
+                                 <br>
+                                 <ul>
+                                    <li>Updated the 404 Error page</li>
+                                    <li>Added Developer & User Tester page</li>
+                                    <li>Updated the Maintenance page</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.1.2</code>
+                                 <br>
+                                 <ul>
+                                    <li>Changed 'V' to 'Version' on the Changelog</li>
+                                    <li>Changed Version header style on the Changelog</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                     </panel-body>
+                  </panel>
+                  <panel class="jsx-1456027835 modern">
+                     </panel-header>
+                     <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                        <table cols="2" border="0" class="jsx-1456027835 information">
+                           <tbody class="jsx-1456027835">
+                              <tr class="jsx-3269109252">
+                                 <code>Version 7.1.1</code>
+                                 <ul>
+                                    <li>Removed the scroll back to top button (causing issues)</li>
+                                    <li>Changed the Email button to an Email icon</li>
+                                    <li>Changed the menu to say 'Close' once opened (Devices Only)</li>
+                                 </ul>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 7.1</code>
+                                    <ul>
+                                       <li>Added a scroll back to top button</li>
+                                       <li>Fixed the 'More' label from not closing after being opened on the dropdown menu</li>
+                                       <li>Fixed the issue with the 'More' not saying 'Less' after click</li>
+                                       <li>Redesigned the 'What's New?' UI</li>
+                                       <li>Changed 'What's New?' to 'Changelog'</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 7</code>
+                                    <ul>
+                                       <li>Redesigned the whole UI for better support on desktops & devices</li>
+                                       <li>Removed all loading pages</li>
+                                       <li>Enhanced the website to make it a lot faster</li>
+                                       <li>Increased image loading speed</li>
+                                       <li>Added Light/Dark mode via switch. (saves its preference to cookies)</li>
+                                       <li>Added a cookie warning pop-up</li>
+                                       <li>Supports all older iOS & Android versions</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 6</code> - REMOVED
+                                    <ul>
+                                       <s><li>Redesigned the UI for a better look</li></s>
+                                       <s><li>Re-wrote most of the code for a new & cleaner look for both desktop & mobile
+                                       </li></s>
+                                       <s><li>Added a few new loading pages</li></s>
+                                       <s><li>Added a warning message of the content within the website</li></s>
+                                       <s><li>Enhanced the website to make it a little faster</li></s>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 5.1 - Hotfix</code>
+                                    <ul>
+                                       <li>Fixed an issue with the video page autoplaying the videos on browser, causing
+                                          them to play before the interface is opened</li>
+                                       <li>Fixed an issue where the video was continuing to play when you got off
+                                          the interface or when you reopened it would continue on from where you got off</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 5.1</code>
+                                    <ul>
+                                       <li>Added a new 'Developers' webpage</li>
+                                       <li>Changed the menu bar navigation for devices</li>
+                                       <li>Prevented landscape rotation on devices</li>
+                                       <li>Changed the video pages for both desktop & devices</li>
+                                       <li>Added a 'please update' message when arriving to the website for mobile devices<br><u>COMPATIBLE</u><br>
+                                       <i>iPhones = iOS 10+ / Andriod = Android 7.0 to 7.1: Android Nougat</i></li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 5</code>
+                                    <ul>
+                                       <li>Replaced "Email" with a Contact page. Contact can now be made via email, call & text</li>
+                                       <li>Improved the "About" page for desktop & device users</li>
+                                       <li>Added a new Site Maintenance notification on browser, displaying a warning when the site will be down</li>
+                                       <li>Removed the "Enter Site" page</li>
+                                       <li>Changed the menu icon & layout for mobile devices on all pages</li>
+                                       <li>Removed the background image on some pages</li>
+                                       <li>Changed the 'What's New?' to now only be viewed on browser (due to device issues)</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 4</code>
+                                    <ul>
+                                       <li>Added a 'What's New?' feature to show the new updates in the
+                                          version</li>
+                                       <li>Mobile support improvement by expanding the margins</li>
+                                       <li>Slightly increased image size to look cleaner on the page</li>
+                                       <li>The chevron icon is now bigger</li>
+                                       <li>Increased button and font size for mobile devices</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 3</code>
+                                    <ul>
+                                       <li>Changed background image for the welcome page</li>
+                                       <li>Redesigned the look of the home screen</li>
+                                       <li>Redesigned the 'About' page</li>
+                                       <li>Redesigned look for the video pages</li>
+                                       <li>Removed the 'Developer' webpage</li>
+                                       <li>Redesigned the website icon</li>
+                                       <li>Sidenav changed to Topnav</li>
+                                       <li>Performance/Speed Improvements</li>
+                                       <li>Adds support for mobile & tablet devices</li>
+                                       <li>Adds an open/close side menu for devices</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 2.1</code>
+                                    <ul>
+                                       <li>Updated look for the home screen</li>
+                                       <li>Added colour behind the header</li>
+                                       <li>Added 'Developer' webpage</li>
+                                       <li>Performance Improvements</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 2</code>
+                                    <ul>
+                                       <li>Added a welcome page before entering the home page</li>
+                                       <li>New look for the home screen</li>
+                                       <li>Removed logo with creative writing</li>
+                                       <li>New look for the About page</li>
+                                       <li>Video pages have been updated</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                        </panel-body>
+                     </panel>
+                     <panel class="jsx-1456027835 modern">
+                        </panel-header>
+                        <panel-body style="padding-top:13px;padding-bottom:13px" className="jsx-1456027835">
+                           <table cols="2" border="0" class="jsx-1456027835 information">
+                              <tbody class="jsx-1456027835">
+                                 <tr class="jsx-3269109252">
+                                    <code>Version 1</code>
+                                    <ul>
+                                       <li>Pre-Release website</li>
+                                       <li>Basic look with a side nav</li>
+                                       <li>Logo with creative writing</li>
+                                       <li>Basic look for the videos</li>
+                                    </ul>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </panel-body>
+
+
+                     </panel>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="__next-error"></div>
+   </div>
+</body>
+
+</html>

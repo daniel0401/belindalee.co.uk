@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="newicon.ico">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="dialog/css/dialog.css" />
+  <script>
+    if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+      document.write('<link rel="stylesheet" href="assets/css/style.css">');
+      document.write('<link rel="stylesheet" href="dialog/css/dialog-wilma.css">');
+    } else {
+      document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+      document.write('<link rel="stylesheet" href="dialog/css/dialog-wilma-fallback.css">');
+    }
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="assets/css/style-fallback.css">
+    <link rel="stylesheet" href="dialog/css/dialog-wilma-fallback.css">
+  </noscript>
+  <script src="dialog/js/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css" />
+  <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+  <script>window.addEventListener("load", function () { window.wpcc.init({ "corners": "normal", "colors": { "popup": { "background": "#000000", "text": "#ffffff", "border": "#e6b3b3" }, "button": { "background": "#ec7fae", "text": "#ffffff" } }, "fontsize": "large", "content": { "href": "cookies-policy" } }) });</script>
+  <title>Homepage</title>
+  <noscript><link rel="stylesheet" type="text/css" href="assets/css/noJS.css" /></noscript>
+</head>
+
+<body>
+  <header class="main-header js-main-header margin-bottom--lg">
+    <div class="container container--lg">
+      <div class="main-header__layout">
+        <div class="main-header__title">
+          <a href="index.html">
+            <h1>Belinda Lee</h1>
+          </a>
+        </div>
+
+        <button class="btn btn--subtle main-header__nav-trigger js-main-header__nav-trigger" aria-label="Toggle menu"
+          aria-expanded="false" aria-controls="main-header-nav" onclick="changeInner()">
+          <i class="main-header__nav-trigger-icon" aria-hidden="true"></i>
+          <span id="menuId">Menu</span>
+        </button>
+
+        <nav class="main-header__nav js-main-header__nav" id="main-header-nav" aria-labelledby="main-header-nav-label"
+          role="navigation">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item"><a href="womanhood.html" class="main-header__nav-link">Womanhood</a></li>
+            <li class="main-header__nav-item"><a href="free-the-nipple.html" class="main-header__nav-link">Free the nipple</a></li>
+            <li class="main-header__nav-item"><a href="hermes.html" class="main-header__nav-link">Aalhiya Paul - Hérmes</a></li>
+            <li class="main-header__nav-item"><a href="about.html" class="main-header__nav-link">About</a></li>
+            <div id="dd" class="wrapper-dropdown-3" tabindex="1" onclick="changeName()"><span id="nameChange">More</span>
+              <ul class="dropdown">
+                <li onclick="location.href='still-life.html';">Still life - Womanhood</li>
+                <li onclick="location.href='fashion-film.html';">Lily Evangeline - Fashion film</li>
+                <li onclick="location.href='hermes-promo-film.html';">Hérmes - Short promo film</li>
+              </ul>
+            </div>
+            <li class="main-header__nav-item main-header__nav-divider" aria-hidden="true"></li>
+            <li class="main-header__nav-item" id="nav-height">
+              <div class="settingBtn"><i class="fas fa-cog"></i>
+                <ul class="ul">
+                  <span class="go">Go To:</span>
+                  <li class="li" onclick="location.href='mailto:19_belinda_lee@live.co.uk?subject=Enquiry';">
+                    <span id="innerEmail"></span><i class="fas fa-envelope" id="fasRight"></i></li>
+                  <li class="li" onclick="location.href='changelog.html';">
+                    <span id="innerLog"></span><i class="fas fa-cogs" id="fasRight"></i></li>
+                  <input class="switch__input" type="checkbox" id="themeSwitch">
+                  <label aria-hidden="true" id="colorDetect" class="" for="themeSwitch"><span id="modeView"></span>
+                    <i class="fas fa-adjust" id="fasRight"></i></label>
+                </ul>
+              </div>
+            </li>
+            <li class="main-header__nav-item" id="iconEmail"><a href="mailto:19_belinda_lee@live.co.uk?subject=Enquiry"
+              class="btn--primary-email"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </nav>
+      </div> <!-- main-header__layout -->
+    </div>
+  </header>
+
+  <section class="feature margin-bottom--xl">
+    <div class="feature__inner container container--adaptive">
+      <div class="feature__text">
+        <div class="feature__text-inner">
+          <div class="text-component">
+            <small class="feature__label margin-bottom--xs">Preview</small>
+            <h1>Womanhood</h1>
+            <p>Click below to view the images of <em>'Womanhood'</em></p>
+          </div>
+
+          <div class="margin-top--sm">
+            <div class="feature__cta flex flex--wrap flex--gap-sm flex--center-y">
+              <a href="womanhood.html" class="btn btn--primary">View Images</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__media">
+        <figure>
+          <div class="mySlides fade">
+            <img src="images/img16.png"/>
+          </div>
+          <div class="mySlides fade">
+            <img src="images/img11.png"/>
+          </div>
+          <div class="mySlides fade">
+            <img src="images/img27.png"/>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature feature--invert margin-bottom--xxl">
+    <div class="feature__inner container container--adaptive">
+      <div class="feature__text">
+        <div class="feature__text-inner">
+          <div class="text-component">
+            <small class="feature__label margin-bottom--xs">Preview</small>
+            <h1>Aalhiya Paul - Hérmes</h1>
+            <p>Click below to view the images of <em>'Aalhiya Paul - Hérmes'</em></p>
+          </div>
+
+          <div class="margin-top--sm">
+            <div class="feature__cta flex flex--wrap flex--gap-sm flex--center-y">
+              <a href="hermes.html" class="btn btn--primary">View Images</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__media">
+        <figure>
+          <div class="mySlides2 fade">
+            <img src="images/img45.png"/>
+          </div>
+          <div class="mySlides2 fade">
+            <img src="images/img53.png"/>
+          </div>
+          <div class="mySlides2 fade">
+            <img src="images/img43.png"/>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="margin-bottom--xxl">
+    <div class="feature__inner container container--adaptive">
+      <div class="feature__text">
+        <div class="feature__text-inner">
+          <div class="text-component">
+            <h1>View More!</h1>
+            <p>Click the button below to view the quick <strong><em>Menu</em></strong>
+              <br>and see more images</p>
+          </div>
+          <div class="margin-top--sm">
+            <div class="feature__cta flex flex--wrap flex--gap-sm flex--center-y">
+              <a href="javascript:void(0)" class="btn btn--primary" data-dialog="somedialog" class="trigger">Menu</a>
+            </div>
+          </div>
+          <div id="somedialog" class="dialog">
+            <div class="dialog__overlay"></div>
+            <div class="dialog__content">
+              <div class="morph-shape">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280"
+                  preserveAspectRatio="none">
+                  <rect x="3" y="3" fill="none" width="556" height="276" />
+                </svg>
+              </div>
+              <div class="dialog-inner">
+                <a href="womanhood.html">Womanhood</a>
+                <a href="still-life.html">Still life - Womanhood</a>
+                <a href="free-the-nipple.html">Free the nipple</a>
+                <a href="fashion-film.html">Lily Evangeline - Fashion film</a>
+                <a href="hermes.html">Aalhiya Paul - Hérmes</a>
+                <a href="hermes-promo-film.html">Hérmes - Short promo film</a>
+                <div><button class="action" data-dialog-close>Close</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature__media">
+        <figure>
+          <div class="mySlides3">
+            <img src="images/img22.png"/>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container container--lg">
+      <div class="main-footer__content">
+        <div class="main-footer__title">
+          <a href="index.html">
+            <h1>Belinda Lee</h1>
+          </a>
+        </div>
+
+        <nav class="main-footer__nav">
+          <ul class="main-footer__nav-list">
+            <li class="main-footer__nav-item">
+              <h4>Developer</h4>
+              <div><a href="developerCard.html">Daniel Lee</a></div>
+            </li>
+
+            <li class="main-footer__nav-item">
+              <h4>Tester</h4>
+              <div><a href="testerCard.html">Jason Lee</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div> <!-- main-footer__content -->
+
+      <div class="main-footer__colophon">
+        <div class="main-footer__colophon-nav" id="colophon-height">
+          <span>&copy; DarkSystem</span>
+          <a href="cookies-policy.html">Cookies Policy</a>
+          <a href="changelog.html">Changelog</a>
+        </div>
+
+        <div class="main-footer__socials" id="socials-mini">
+          <a href="https://www.instagram.com/daniel_lee98/" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+              <title>Follow me on Instagram</title>
+              <g>
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                </path>
+              </g>
+            </svg>
+          </a>
+
+          <a href="https://paypal.me/Daniel0401?locale.x=en_GB" target="_blank">
+            <svg class="icon" viewBox="0 0 16 16">
+              <title>Buy me a coffee</title>
+              <g>
+                <path
+                  d="m9.8 11.3c2.8 0 5.2-1.7 5.8-4.7 0.3-1.6 0-2.7-0.7-3.5 0.3 0.7 0.4 1.6 0.2 2.7-0.6 2.9-3 4.7-5.8 4.7h-3l-1 4.7h-3.4l-0.2 0.8h4.1l1-4.7h3z" />
+                <path
+                  d="m5.2 9.5h2.9c2.8 0 5.2-1.7 5.8-4.7 0.8-3.3-1.6-4.8-3.7-4.8h-7l-3.1 14.2h4.1l1-4.7zm4.9-4.7c-0.3 1.1-1.3 2-2.3 2l0.5-2.1h1.8v0.1zm-3.4-1.9h2c0.7 0 1.2 0.4 1.4 1h-0.3-2l-0.6 2.9h-1.4l0.9-3.9z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div> <!-- container -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/IEdetect.js"></script>
+  <script src="dialog/js/classie.js"></script>
+  <script src="dialog/js/dialogFx.js"></script>
+  <script>
+    (function () {
+
+      var dlgtrigger = document.querySelector('[data-dialog]'),
+        somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
+        dlg = new DialogFx(somedialog);
+
+      dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
+
+    })();
+  </script>
+  <script>
+    var slideIndex = 0;
+    var maximum = 2;
+    var minimum = 0;
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var slides1 = document.getElementsByClassName("mySlides2");
+
+    $(".mySlides").css('display', 'none');
+    $(".mySlides2").css('display', 'none');
+
+    var randomnumber1;
+    var randomnumber2;
+
+    showSlides();
+
+    function showSlides() {
+
+      randomnumber1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+
+      // run this loop so that randomnumber1 is different than randomnumber2
+      do {
+        randomnumber2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+      } while (randomnumber1 === randomnumber2);
+
+      $(".mySlides").css('display', 'none');
+      $(".mySlides2").css('display', 'none');
+
+      slides[randomnumber1].style.display = "block";
+
+      slides1[randomnumber2].style.display = "block";
+
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+  <script>
+      function changeInner() {
+        var x = document.getElementById("menuId");
+        if (x.innerHTML === "Menu") {
+          x.innerHTML = "Close";
+        } else {
+          x.innerHTML = "Menu";
+        }
+      }
+  </script>
+  <script>
+      function changeName() {
+        var y = document.getElementById("nameChange");
+        if (y.innerHTML === "More") {
+          y.innerHTML = "Less";
+        } else {
+          y.innerHTML = "More";
+        }
+      }
+  </script>
+  <script>
+    $(document).ready(function(){
+      document.getElementById("innerEmail").innerHTML = "Email";
+      document.getElementById("innerLog").innerHTML = "Changelog";
+    })
+  </script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.wrapper-dropdown-3').click(function(){
+          $('.wrapper-dropdown-3').toggleClass('active')
+          $('.dropdown').toggleClass('active')
+        if($('.wrapper-dropdown-3').hasClass('active')){
+          $('.ul').slideUp(function(){
+            $('.settingBtn').removeClass('active');
+          });
+        }
+        })
+      })
+  </script>
+  <script>
+  $(document).ready(function(){
+    var y = document.getElementById("nameChange");
+    $('.settingBtn').click(function(){
+      if($(this).hasClass('active')){
+        $('.ul').slideUp(function(){
+          $('.settingBtn').removeClass('active');
+        });
+        }else{
+          $(this).addClass('active');
+          setTimeout(function(){
+            $('.ul').stop().slideDown();
+            },200);
+          }
+        if($('.settingBtn').hasClass('active')){
+          $('.wrapper-dropdown-3').removeClass('active')
+          $('.dropdown').removeClass('active')
+          y.innerHTML = "More";
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

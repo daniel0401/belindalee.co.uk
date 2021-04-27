@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	margin: auto;
+	font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background: #ED213A;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #93291E, #ED213A);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jp-404, .jp-404 p {
+	user-select: none;
+	-webkit-user-select: none;
+	color: #fff;
+}
+
+.jp-404 p {
+	padding: 10px;
+	margin: 20px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.jp-404 h1 {
+	text-align: center;
+}
+
+.jp-404 h1 span {
+	display: block;
+	margin: 20px auto;
+	font-size: 120px;
+}
+
+a.back-to-home {
+	border: 2px solid #fff;
+	-webkit-tap-highlight-color: transparent;
+	max-width: 150px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 16px;
+	display: block;
+	margin: 25px auto;
+	color: #fff;
+	text-decoration: none;
+	transition: .4s;
+	font-size: 16px;
+	-webkit-transition: .4s;
+}
+
+a.back-to-home:hover {
+	background: #fff;
+	color: #ED213A;
+	transition: .4s;
+	-webkit-transition: .4s;
+}
+
+.copy-404 {
+	margin: 25px;
+	text-align: center;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.copy-404 a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.copy-404 a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.multi-button {
+	margin-top: 10px;
+	padding: 8px 10px;
+	border-radius: 50px;
+	cursor: default;
+	text-align: center;
+}
+
+.multi-button button {
+	border: 0 solid transparent;
+	background: transparent;
+	padding: 10px 30px;
+	margin: 0 -2px;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 12px;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	left: 0;
+	outline: none;
+	transition: background 0.2s ease-in-out;
+}
+
+.multi-button button a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.multi-button button:first-child {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.multi-button button:last-child {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.multi-button button div {
+	position: absolute;
+	bottom: -43px;
+	left: calc(50% - 40px);
+	width: 80px;
+	font-size: 13px;
+	color: #fff;
+	background: rgba(20, 25, 36, 0.7);
+	border-radius: 16px;
+	line-height: 30px;
+	font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 1px;
+	box-shadow: 0 0 5px rgba(39, 48, 68, 0.3), 1px 1px 5px rgba(39, 48, 68, 0.2);
+	display: none;
+	cursor: pointer;
+}
+
+.multi-button button:hover {
+	color: #273043;
+	background: rgba(240, 241, 244, 1);
+}
+
+.multi-button button:hover div {
+	display: block;
+	animation: tooltip-animation-normal 0.3s ease-out forwards;
+}
+
+.multi-button button:hover div.animate-right {
+	animation: tooltip-animation-right 0.3s ease-out forwards;
+}
+
+.multi-button button:hover div.animate-left {
+	animation: tooltip-animation-left 0.3s ease-out forwards;
+}
+
+.multi-button button:active {
+	outline: none;
+	background: rgba(214, 216, 225, 1);
+}
+
+@keyframes tooltip-animation-right {
+	0% {
+		transform: translateX(-75px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes tooltip-animation-left {
+	0% {
+		transform: translateX(75px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes tooltip-animation-normal {
+	0% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.multi-button button {
+		padding: 10px 27px;
+	}
+}

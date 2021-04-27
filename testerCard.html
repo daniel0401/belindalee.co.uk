@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>User Tester</title>
+    <link rel="shortcut icon" href="developer/devIcon.ico">
+    <link rel="stylesheet" type="text/css" href="developer/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="info">
+        <button class="menu">
+            <svg viewBox="0 0 64 48">
+                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+            </svg>
+        </button>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developerCard.html">Developer</a></li>
+                <li><a href="mailto:daniel_lee9@live.co.uk?subject=DarkSystem&body=(We usually take 1-4 days to reply to emails)" target="_blank"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="https://paypal.me/Daniel0401?locale.x=en_GB" target="_blank"><i class="fas fa-mug-hot"></i> Donate</a></li>
+            </ul>
+        </div>
+        <section class="team">
+            <div class="container">
+                <div class="row">
+                    <h1>User Tester</h1>
+                    <p>I have recently started learning how to program & have recently joined in helping <i>Daniel Lee</i>. 
+                        I am excited to be learning how to program in a better and more creative way. I have passion for 
+                        programming & have decided to help create new designs for the website(s). I started learning how to 
+                        program in 2018 by starting off with Python & I am now currently learning the basics of HTML, CSS 
+                        & Javascript. I have been put to the role of 'tester' as it will help give me a better understanding 
+                        of debugging & keeping an eye out for any issues that have been missed. This will help with proplem 
+                        solving when I start coding. When I finish school, I want to move on to an apprenticeship as I know 
+                        it'll help me become better at coding & push me in the right direction.</p>
+                </div>
+                <div>
+                    <div class="row-2">
+                        <h1>User Tester</h1>
+                        <p>I have recently started learning how to program & have recently joined in helping <i>Daniel Lee</i>. 
+                            I am excited to be learning how to program in a better and more creative way. I have passion for 
+                            programming & have decided to help create new designs for the website(s). I started learning how to 
+                            program in 2018 by starting off with Python & I am now currently<span id="dots">...</span><span id="more"> 
+                            learning the basics of HTML, CSS & Javascript. I have been put to the role of 'tester' as it will 
+                            help give me a better understanding of debugging & keeping an eye out for any issues that have been 
+                            missed. This will help with proplem solving when I start coding. When I finish school, I want to move 
+                            on to an apprenticeship as I know it'll help me become better at coding & push me in the right direction.</p>
+                        <button onclick="myFunction()" id="readBtn">Read More</button>
+                    </div>
+                    <div class="row mgt50px">
+                        <div class="column">
+                            <div class="imgBox">
+                                <img src="images/pic2.jpg">
+                            </div>
+                            <div class="details">
+                                <h3>Jason Lee<br><span>User Tester</span></h3>
+                                <ul style="color: #fff;">
+                                    <li><i style="font-size: 14px;">No Social Media Accounts</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="row-2 mgt50px">
+                        <div class="column">
+                            <div class="imgBox">
+                                <img src="images/pic2.jpg">
+                            </div>
+                            <div class="details">
+                                <h3>Jason Lee<br><span>User Tester</span></h3>
+                                <ul style="color: #fff;">
+                                    <li><i style="font-size: 14px;">No Social Media Accounts</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="developer/js/readmore.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.menu').toggleClass('active')
+                $('.menu-bar').toggleClass('active')
+                $('.team').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
